@@ -1,0 +1,385 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: rgb(245, 245, 245);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    background-color: rgb(8, 107, 255);
+}
+
+button:hover{
+    background-color: rgb(0, 84, 211);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 20px 20px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    font-size: 1.6em;
+}
+
+header span{
+    color : rgb(255, 0, 0);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+}
+
+header span:hover{
+    color: rgb(255, 0, 0);
+}
+
+header a:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+#hero{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url("media/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero h1{
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+}
+
+#project{
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#D{
+    color:rgb(255, 0, 0);
+    font-weight: 600;
+}
+
+#quienessomos .container{
+    text-align: center;
+    padding: 200px 30px;
+}
+
+#quienessomos h2{
+    color: rgb(50, 50, 50);
+    padding-bottom: 40px;
+}
+
+#quienessomos h3{
+    color: rgb(50, 50, 50);
+    padding-bottom: 30px;
+}
+
+#quienessomos p{
+    color: rgb(50, 50, 50);
+}
+
+#youtube{
+    text-align: center;
+}
+
+#youtube .container{
+    padding: 150px 12px;
+}
+
+#youtube h2{
+    margin-top: 0;
+    font: 3.2em;
+}
+
+#youtube p{
+    display: none;
+}
+
+#youtube .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/instapet.png");
+
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/adventure.jpg");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/greenphotos.jpg");
+
+}
+
+#discord{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url("media/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 60vh;
+}
+
+#discord h2{
+    font: 3.2em;
+}
+
+#discord p{
+    color: white;
+}
+
+footer{
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .container{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        margin: 0;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    header .logo{
+        padding: 10px 0px;
+        color: rgb(8, 107, 255);
+    }
+
+    header span{
+        color: white;
+    }
+
+    .navscroll.logo {
+        padding: 20px 20px;
+    }
+
+    .navcolor.logo {
+        padding: 0px 20px;
+    }
+
+    .navscroll a{
+        color: white;
+    }
+
+    .navscroll{
+        background-color: transparent;
+        transition:background-color 500ms, color 500ms;
+    }
+    
+    .nav-color{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .nav-color span{
+        color: white;
+    }
+
+    .nav-color span:hover{
+        color: white;
+    }
+
+    .nav-color a:hover{
+        color: rgb(180,180,180);
+    }
+
+    #hero h1{
+        font-size: 4em;
+    }
+
+    #quienessomos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #quienessomos .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienessomos h2{
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    #quienessomos h3{
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    #quienessomos .img-container{
+        background-image: url("media/html.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px; 
+    }
+
+    #youtube .cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    #youtube h2{
+        font-size: 4em;
+    }
+
+    #youtube h3{
+        margin-top: 0;
+    }
+
+    #youtube .card{
+        padding: 50px;
+        background-repeat: no-repeat;
+    }
+
+    .card:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/ricardoholder.png");
+
+    }
+
+    .card:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/adventure.png");
+    }
+
+    .card:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/photos.png");
+
+    }
+
+    #discord h2{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: center;
+    }
+}

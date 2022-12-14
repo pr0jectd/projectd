@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matías Pinto</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navscroll">
+        <div class="container">
+            <p class="logo"><span>PrD</span></p>
+            <nav>
+                <a class="a-hero" href="#hero">Inicio</a>
+                <a class="a-quienessomos" href="#quienessomos">¿Quiénes somos?</a>
+                <a class="a-youtube" href="#youtube">Youtube</a>
+                <a class="a-discord" href="#discord">Aplicativo</a>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+        <div data-aos="fade-right"
+        data-aos-offset="150"
+        data-aos-duration="600">
+            <h1>Bienvenido a<br><span id="project">Project</span><span id="D"> D</span></h1>
+        </div>
+        </div>
+    </section>
+
+    <section id="quienessomos">
+        <div class="container">
+            <div data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-duration="600" class="img-container"></div>
+            <div class="text">
+            <div data-aos="fade-right"
+            data-aos-offset="150"
+            data-aos-duration="600"><h2>¿Quiénes somos?</h2></div>
+            <div data-aos="fade-right"
+            data-aos-offset="150"
+            data-aos-duration="600" ><h3>Project D es una comunidad de personas apasionadas por los autos y el tunning.</h3></div>
+            <div data-aos="fade-right"
+            data-aos-offset="150"
+            data-aos-duration="600" ><p>Nació como un pequeño grupo de corredores que empezaron a realizar KDDs tunning y carreras callejeras,
+                con el tiempo las personas nos empezaron a conocer, logrando así una comunidad cada vez más masiva.
+                Nuestro objetivo es llegar a ser el grupo automovilístico número 1 en la ciudad.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="youtube">
+        <div class="container">
+            <div data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-duration="600"><h2>Youtube</h2></div>
+            <div class="cards">
+                <div data-aos="fade-up"
+                data-aos-offset="150"
+                data-aos-duration="600" class="card">
+                    <h3>Project D</h3>
+                    <form action=""><button>Ver</button></form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discord">
+        <div class="container">
+            <div data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-duration="600"><h2>Aplicativo</h2></div>
+            <div data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-duration="600"><p>Entérate de todo lo que hacemos.</p></div>
+            <div><iframe src="https://discord.com/widget?id=1032773436491178056&theme=dark" width="500" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; Project D 2022
+                </p>
+            </div>
+        </footer>  
+    </section>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>$(function (){
+        $(window).scroll(function(){
+           if ($(this).scrollTop() > 100) {
+            $('.navscroll').addClass("nav-color");
+           } else {
+            $(".navscroll").removeClass("nav-color");
+           }
+        });
+    });
+    $(function (){
+        $(window).scroll(function(){
+           if ($(this).scrollTop() > 100) {
+            $('.hero-a').addClass(".hero-a-color");
+           } else {
+            $(".hero-a").removeClass(".hero-a-color");
+           }
+        });
+    });
+    </script>
+</body>
+</html>

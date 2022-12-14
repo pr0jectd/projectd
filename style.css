@@ -136,24 +136,28 @@ header a:hover{
     color: rgb(50, 50, 50);
 }
 
-#youtube{
+#revista{
     text-align: center;
 }
 
-#youtube .container{
+#revista .container{
     padding: 150px 12px;
 }
 
-#youtube h2{
+#revista h2{
     margin-top: 0;
     font: 3.2em;
 }
 
-#youtube p{
+#revista h3{
+    color: white;
+}
+
+#revista p{
     display: none;
 }
 
-#youtube .card{
+#revista .card{
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
@@ -328,20 +332,21 @@ footer .container{
         width: 500px; 
     }
 
-    #youtube .cards{
+    #revista .cards{
         display: flex;
         justify-content: center;
     }
 
-    #youtube h2{
+    #revista h2{
         font-size: 4em;
     }
 
-    #youtube h3{
+    #revista h3{
         margin-top: 0;
+        color: white;
     }
 
-    #youtube .card{
+    #revista .card{
         padding: 50px;
         background-repeat: no-repeat;
     }
